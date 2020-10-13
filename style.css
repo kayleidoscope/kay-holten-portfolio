@@ -1,0 +1,240 @@
+/* -------------------- General -------------------- */
+
+body {
+  background-color: black;
+  margin: 0;
+}
+
+hr {
+  background-image: url("images/hr.png");
+  height: 100px;
+  width: 250px;
+  border: none;
+}
+
+h1 {
+  font-family: 'Righteous', cursive;
+  margin: 10px;
+  padding-top: 40px;
+  font-size: 35px;
+  line-height: 0px;
+}
+
+h2 {
+  font-family: 'Inconsolata', monospace;
+  margin: 20px;
+  padding-top: 30px;
+  font-size: 30px;
+  }
+
+header h2 {
+  font-size: 20px;
+  padding-top: 10px;
+  height: 2ch;
+}
+
+h3 {
+  font-family: 'Inconsolata', monospace;
+  padding: 10px;
+  background-color: gray;
+}
+
+a, p, li {
+  font-family: 'Lato', sans-serif;
+}
+
+footer {
+  color: white;
+  text-align: right;
+  font-family: 'Lato', sans-serif;
+  margin-right: 10px;
+  color: gray;
+}
+
+/* -------------------- Navigation Bar -------------------- */
+
+.navbar {
+  background-color: #34F6F2;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar a {
+  flex: 1;
+  text-decoration: none; 
+}
+
+.navbar a:visited, .navbar a:link {
+  color: black;
+}
+
+.intro-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  flex: 1;
+  padding: 0 15px;
+}
+
+/* -------------------- Header -------------------- */
+
+header {
+  background-color: #306B34;
+  color: white;
+  width: 95%;
+  max-width: 800px;
+  clear: both;
+  border-radius: 0 25px 25px 0;
+  margin-top: 20px;
+}
+
+header img {
+  width: 100%;
+  max-width: 300px;
+}
+
+
+header h2 {
+  line-height: 0px;
+}
+
+/* -------------------- About Me -------------------- */
+
+.about-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.services-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+#about {
+  background-color: #1E96FC;
+  color: white;
+  width: 95%;
+  border-radius: 25px 0 0 25px;
+  margin-top: 40px;
+  margin-left: auto;
+}
+
+#about img {
+  width: 100%;
+}
+
+/* -------------------- Portfolio -------------------- */
+
+#portfolio {
+  background-color: #772D8B;
+  color: white;
+  width: 95%;
+  border-radius: 0 25px 25px 0;
+}
+
+.portfolio-group {
+  display: flex;
+  flex-direction: column;
+}
+
+#portfolio img {
+  width: 100%;
+}
+
+#portfolio a:visited, #portfolio a:link {
+  color: white;
+}
+
+/* -------------------- Contact -------------------- */
+
+#contact {
+  background-color: #FCF300;
+  color: black;
+  padding-bottom: 15px;
+}
+
+#contact h2, #contact h3 {
+  text-align: center;
+}
+
+.contact-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-item {
+  flex: 1;
+  margin: 5px 5%;
+}
+
+label {
+  display: block;
+  font-family: 'Lato', sans-serif;
+}
+
+form input {
+  font-family: 'Lato', sans-serif;
+}
+
+textarea {
+  width: 100%;
+  height: 5rem;
+}
+
+#contact a:visited, #contact a:link {
+  color: black;
+}
+
+button {
+  margin-top: 10px;
+  font-family: 'Lato', sans-serif;
+  background-color: #FCF300;
+  border-radius: 0;
+}
+
+/* -------------------- Desktop media query -------------------- */
+
+@media all and (min-width: 800px) {
+  .about-group {
+    flex-direction: row;
+  }
+  
+  .portfolio-group {
+    flex-direction: row;
+  }
+
+  .navbar {
+    width: 300px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .contact-group {
+    flex-direction: row;
+  }
+
+  #contact li {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  h1 {
+    font-size: 5vw;
+  }
+
+
+  header h2 {
+    font-size: 3vw;
+    padding-top: 1.5ch;
+  }
+
+  .services-group {
+    flex-direction: row;
+  }
+}
